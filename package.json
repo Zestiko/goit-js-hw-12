@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://YozefKubirya.github.io/goit-js-hw-08",
+  "homepage": "https://yozefkubirya.github.io/parcel-project-template",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https:/YozefKubirya.github.io/goit-js-hw-08/"
+    "url": "git+https://github.com/YozefKubirya/goit-js-hw-08.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
