@@ -503,6 +503,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"6XVkV":[function(require,module,exports) {
+console.log("hello");
 
 },{}]},["8EXaa","6XVkV"], "6XVkV", "parcelRequired7c6")
 
