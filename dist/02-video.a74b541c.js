@@ -512,6 +512,16 @@ const iframe = document.querySelector("iframe");
 const player = new (0, _playerDefault.default)(iframe);
 const STORAGE_KEY = "videoplayer-current-time";
 console.log(iframe);
+player.on("timeupdate", (0, _lodashThrottleDefault.default)(onPlay, 1000));
+function onPlay(evt) {
+    const currentTime = evt.seconds;
+    localStorage.setItem(STORAGE_KEY, currentTime);
+}
+const savedTime = localStorage.getItem(STORAGE_KEY);
+console.log(savedTime);
+if (savedTime) player.setCurrentTime(savedTime).catch(function(error) {
+    error.name;
+});
 
 },{"@vimeo/player":"kmmUG","lodash.throttle":"bGJVT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kmmUG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
